@@ -2,7 +2,9 @@
 ## Cleaning Data in OpenRefine
 
 **David Durden**, Data Services Librarian
-2020-February-06
+**Jodi Coalter**, Life Sciences Librarian
+
+February 06, 2020
 
 ## Agenda and Topics
 
@@ -20,6 +22,8 @@
 **Useful GREL Cheat Sheet:** [Cheat Sheet](assets/GoogleRefineCheatSheet.pdf)
 
 **Data for lesson/exercises:** [Data](data/doaj-article-sample.csv)
+
+**Lesson materials:** [Markdown](200206-openrefine.md)
 
 ## Thanks!
 
