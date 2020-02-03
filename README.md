@@ -23,7 +23,7 @@ February 06, 2020
 
 **Data for lesson/exercises:** [Data](data/doaj-article-sample.csv)
 
-**Lesson materials:** [Markdown](200206-openrefine.md)
+**Lesson materials:** [Web](https://drdn.github.io/openRefine/200206-openrefine)
 
 ## Thanks!
 
