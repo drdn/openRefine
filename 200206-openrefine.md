@@ -232,7 +232,7 @@ Use a `text facet` for the `license` column and answer these questions?
 
 >The text filter works a lot like a search box.
 
-**Tip: If you know regular expressions, you can also use them in a text filter.** <a href="https://xkcd.com/208/"target="_blank">Relevant xckd</a>
+**Tip: If you know regular expressions, you can also use them in a text filter.** [Relevant xckd](https://xkcd.com/208/)
 
 ## Working with Filtered and Faceted Data
 
