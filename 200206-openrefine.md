@@ -4,8 +4,8 @@
 <img src="assets/or-logo.png" alt="OpenRefine Logo" width="200" align="right"/>
 <br>
 <br>
-**David Durden**, Data Services Librarian<br>
-**Jodi Coalter**, Life Sciences Librarian<br>
+<b>David Durden</b>, Data Services Librarian<br>
+<b>Jodi Coalter</b>, Life Sciences Librarian<br>
 <br>
 February 06, 2020
 
@@ -222,17 +222,17 @@ Use a `text facet` for the `license` column and answer these questions?
 1. What is the most common license in the file?
 2. How many articles in the file don't have a license assigned?
 
-<details><summary>Solution</summary><ol><li>Create a facet for the License column</li><li>Sort values by `count`</li><li>What is the most common License in the file? **Answer:** `CC BY`</li><li>How many articles in the file don't have a license assigned? **Answer:** `6`</li></ol></details>
+<details><summary>Solution</summary><ol><li>Create a facet for the License column</li><li>Sort values by `count`</li><li>What is the most common License in the file? <b>Answer:</b> `CC BY`</li><li>How many articles in the file don't have a license assigned? <b>Answer:</b> `6`</li></ol></details>
 
 ## Text Filters
 
 > What is a filter?
 
-**'Text Filters** query the text of column and return a result if there is a match. Text filters are applied by clicking the drop down menu at the top of the column you want to apply the filter to and choosing `Text filter`.
+**Text Filters** query the text of column and return a result if there is a match. Text filters are applied by clicking the drop down menu at the top of the column you want to apply the filter to and choosing `Text filter`.
 
 >The text filter works a lot like a search box.
 
-**Tip: If you know regular expressions, you can also use them in a text filter.** [Relevant xkcd](https://xkcd.com/208/)
+**Tip: If you know regular expressions, you can also use them in a text filter.** <a href="https://xkcd.com/208/"target="_blank">Relevant xckd</a>
 
 ## Working with Filtered and Faceted Data
 
@@ -315,7 +315,7 @@ Below is a table of common transformations and the equivalent GREL expression.
 1. Create a text facet on the `Publisher` column
 2. Note that the values there are two that look identical - why does this value appear twice? What can you do to fix it?
 
-<details><summary>Solution</summary>There is extra whitespace in the cell!<ol><li>On the publisher column use the drop-down menu to select `Edit cells -> Common transformations -> Trim leading and trailing whitespace`</li><li>Look at the publisher facet now - has it changed? **If it hasn't, try clicking the `Refresh` option to force an update.**</li></ol></details>
+<details><summary>Solution</summary>There is extra whitespace in the cell!<ol><li>On the publisher column use the drop-down menu to select `Edit cells -> Common transformations -> Trim leading and trailing whitespace`</li><li>Look at the publisher facet now - has it changed? <b>If it hasn't, try clicking the `Refresh` option to force an update.</b></li></ol></details>
 
 ## Writing Transformations
 
@@ -359,9 +359,9 @@ However, some operations and transformations only work on ‘number’ or ‘dat
 
 1. Remove any existing Facets or Filters.
 2. On the Date column, use the drop-down meny to select `Edit cells -> Transform`.
-3. In the expression box, type `value.toDate("dd/MM/yyyy")` and press OK (*Note: the original creators of this dataset are from the UK - notice the regional date format*).
+3. In the expression box, type `value.toDate("dd/MM/yyyy")` and press OK (**Note: the original creators of this dataset are from the UK - notice the regional date format**).
 4. Notice how the values are displayed in green and follow the ISO 8691 data convention - this indicates that values are now stored as date data types.
-5. On the Date column drop-down, select `Edit column -> Add column based on this colum`. Using this function you can created a new column, while preserving the old column.
+5. On the Date column drop-down, select `Edit column -> Add column based on this column`. Using this function you can created a new column, while preserving the old column.
 6. In the `New column name` type "Formatted Date".
 7. Let's change the regional date format to US. In the expression box, type `value.toString("MM/dd/yyyy")`
 
@@ -383,7 +383,9 @@ OpenRefine records the steps you have taken and even allows you to export steps 
 
 The `Undo` and `Redo` options are accessed via the lefthand panel.
 
-To undo, click on the last step you want to preserve in the list and it will revert back to that step. **Note: reverting to an earlier step will 'grey out' all steps after that point. Once you record a new step, all 'greyed out' steps will be overwritten.**
+To undo, click on the last step you want to preserve in the list and it will revert back to that step. 
+
+**Note: reverting to an earlier step will 'grey out' all steps after that point. Once you record a new step, all 'greyed out' steps will be overwritten.**
 
 ## Create a Workflow Script
 
