@@ -165,12 +165,12 @@ Splitting on a comma will not work with Authors because the names may include co
 <details>
     <summary>Solution</summary>
     <ol>
-        <li>The subject words/headings are delimited with the pipe ( \| ) character.</li>
+        <li>The subject words/headings are delimited with the pipe ( | ) character.</li>
     <li>To split the subject words into individual cells you need to:
         <ul>
             <li>Click the drop-down menu at the top of the Subjects column</li>
             <li>Choose `Edit cells -> Split multi-valued cells`</li>
-            <li>In the prompt, type the ( \| ) character and click OK</li></ul></li></ol>
+            <li>In the prompt, type the ( | ) character and click OK</li></ul></li></ol>
 </details>
 
 # Exercise: Join the 'Subjects' Column Back Together
@@ -180,12 +180,12 @@ Splitting on a comma will not work with Authors because the names may include co
 <details>
     <summary>Solution</summary>
     <ol>
-        <li>The subject words/headings were previously delimited with the pipe ( \| ) character.</li>
+        <li>The subject words/headings were previously delimited with the pipe ( | ) character.</li>
         <li>To join the split subject cells back into a single cell you need to:
             <ul>
                 <li>Click the dropdown menu at the top of Subjects column</li>
                 <li>Choose `Edit cells -> Join multi-valued cells`</li>
-                <li>In the prompt type the ( \| ) character and click OK</li></ul></li></ol></details>
+                <li>In the prompt type the ( | ) character and click OK</li></ul></li></ol></details>
 
 ## Faceting and Filtering
 
