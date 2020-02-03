@@ -18,7 +18,7 @@ February 06, 2020
 - Loading data
 - Performing data operations in OpenRefine
 - Creating workflow scripts
-- Format converstion
+- Format conversion
 - Saving data
 
 # Files and Links
@@ -76,7 +76,7 @@ Save a copy of this [csv](data/doaj-article-sample.csv). We'll use this file for
 4. Click in the `Character encoding` box and set it to `UTF-8`
 5. Ensure the first row is used to create the column headings by checking `Parse next 1 line(s) as column headers`
 6. Make sure the `Parse cell text into numbers, dates, ...` box is not checked so OpenRefine doesn't try to automatically detect numbers
-7. The Project Name box in the upper right cornder will default to the title of your imported file. Click in the `Project Name` box to give it a different name.
+7. The Project Name box in the upper right corner will default to the title of your imported file. Click in the `Project Name` box to give it a different name.
 8. Click `Create Project >>` at the top right of the screen. This will create the project and open it for you. Projects are saved as you work on them, so there is no need to save copies as you go along.
 
 
@@ -96,13 +96,13 @@ Save a copy of this [csv](data/doaj-article-sample.csv). We'll use this file for
 
 ## Splitting Cells
 
->To see how this works in practice, we'll use the Author column. You should be able to see multiple names in each cell separated by the pipe symbol ( | ).
+>To see how this works in practice, we'll use the Author column. You should be able to see multiple names in each cell separated by the pipe symbol ( \| ).
 
 If we want to work with each author name individually, we need to have each name in its own cell. To split the names into their own cells, we can use a `Split multi-valued cells` function:
 
 - Click the dropdown menu at the top of the Author column
 - Choose `Edit cells -> Split multi-valued cells`
-- In the prompt type the ( | ) symbol and click `OK`
+- In the prompt type the ( \| ) symbol and click `OK`
     - Note that the rows are still numbered sequentially
 - Click the `Records` option to change to Records mode
     - Note how the numbering has changed - indicating that several rows are related to the same record
@@ -111,34 +111,34 @@ If we want to work with each author name individually, we need to have each name
 
 A common workflow with multi-valued cells is:
 
-- Split mult-valued cells into individual cells
+- Split multi-valued cells into individual cells
 - Modify/refine/clean individual cells
 - Join multi-valued cells back together
 
 Modifying cells will be covered later, but for now we will join the cells back together.
 
-- Click the dropdown meny at the top of the Author column
+- Click the dropdown menu at the top of the Author column
 - Choose `Edit cells -> Join multi-valued cells`
-- In the prompt type the ( | ) 'pipe' symbol
+- In the prompt type the ( \| ) 'pipe' symbol
     - Here we are specifying the *delimiter* character for OpenRefine to use to join the values together
 - Click `OK` to join the Authors cells back together
 
 
 >You will now see that the split rows have gone away - the Authors have been joined into a single cell with the specified delimiter. 
 
-Our Rows and Records values will now be the same since we do not have any more columns ith split (multi-valued) cells.
+Our Rows and Records values will now be the same since we do not have any more columns with split (multi-valued) cells.
 
 - Click both the `Rows` and `Records` options and observe how the numbers of Rows and Records are equal.
 
 ## Choosing a Good Separator
 
->The value that separates multi-valued cells is called a separator or delimiter. In the examples, we've seen the pipe character ( | ) has been used.
+>The value that separates multi-valued cells is called a separator or delimiter. In the examples, we've seen the pipe character ( \| ) has been used.
 
 Choosing the wrong separator can lead to problems. Consider the following multi-valued Author example with a pipe as a separator.
 
 >`Jones, Andrew | Davis, S.`
 
-When we tell OpenRefine to split this cell on the pipe ( | ), we will get two separate authors.
+When we tell OpenRefine to split this cell on the pipe ( \| ), we will get two separate authors.
 
 Now imagine that the document creator has chosen a **comma** as the separator instead of a pipe.
 
@@ -155,7 +155,7 @@ Now imagine that the document creator has chosen a **comma** as the separator in
 
 Splitting on a comma will not work with Authors because the names may include commas within them.
 
->When creating a spreasheet with multi-valued cells, choose a separator that will never appear in the cell values themselves. Commas, colons, and semi-colons should be avoided as separators.
+>When creating a spreadsheet with multi-valued cells, choose a separator that will never appear in the cell values themselves. Commas, colons, and semi-colons should be avoided as separators.
 
 # Exercise: Splitting the 'Subjects' Column
 
@@ -165,12 +165,12 @@ Splitting on a comma will not work with Authors because the names may include co
 <details>
     <summary>Solution</summary>
     <ol>
-        <li>The subject words/headings are delimited with the pipe ( | ) characer.</li>
+        <li>The subject words/headings are delimited with the pipe ( \| ) character.</li>
     <li>To split the subject words into individual cells you need to:
         <ul>
             <li>Click the drop-down menu at the top of the Subjects column</li>
             <li>Choose `Edit cells -> Split multi-valued cells`</li>
-            <li>In the prompt, type the ( | ) character and click OK</li></ul></ol>
+            <li>In the prompt, type the ( \| ) character and click OK</li></ul></li></ol>
 </details>
 
 # Exercise: Join the 'Subjects' Column Back Together
@@ -180,12 +180,12 @@ Splitting on a comma will not work with Authors because the names may include co
 <details>
     <summary>Solution</summary>
     <ol>
-        <li>The subject words/headings were previoulsy delimited with the pipe ( | ) character.</li>
+        <li>The subject words/headings were previously delimited with the pipe ( \| ) character.</li>
         <li>To join the split subject cells back into a single cell you need to:
             <ul>
                 <li>Click the dropdown menu at the top of Subjects column</li>
                 <li>Choose `Edit cells -> Join multi-valued cells`</li>
-                <li>In the prompt type the ( | ) character and click OK</li></ul></ol></details>
+                <li>In the prompt type the ( \| ) character and click OK</li></ul></li></ol></details>
 
 ## Faceting and Filtering
 
@@ -216,7 +216,7 @@ You can include multiple values from the facet in a filter at one time by using 
 
 ## Exercise: Text Facets
 
->Which licencses are used for articles in this file?
+>Which licenses are used for articles in this file?
 
 Use a `text facet` for the `license` column and answer these questions?
 1. What is the most common license in the file?
@@ -242,7 +242,7 @@ Use a `text facet` for the `license` column and answer these questions?
 
 > Use the `Facet by blank` function to find all publications in this data set without a DOI
 
-<details><summary>Solution</summary><ol><li>On the `DOI` column drop-down, select `Customzied facets -> Facet by blank`</li><li>`True` means that it is blank, so you can:<ul><li>Select `Include` on `True` in the facet to filter the list of publications to only those that don't have a DOI</li></ul></li></ol></details>
+<details><summary>Solution</summary><ol><li>On the `DOI` column drop-down, select `Customized facets -> Facet by blank`</li><li>`True` means that it is blank, so you can:<ul><li>Select `Include` on `True` in the facet to filter the list of publications to only those that don't have a DOI</li></ul></li></ol></details>
 
 ## Editing Data through Facets
 
@@ -266,7 +266,7 @@ The list of values in the facet will update as you make edits.
 
 ## Reordering Columns
 
->You can re-order the columsn by clicking the drop-down menu at the top of the first column (labelled `All`), and choosing `Edit columns -> Re-order / remove columns...`.
+>You can re-order the columns by clicking the drop-down menu at the top of the first column (labelled `All`), and choosing `Edit columns -> Re-order / remove columns...`.
 
 * Drag to re-order columns
 * Drop to remove columns
@@ -292,12 +292,12 @@ Unlike in Excel, **Sorts** in OpenRefine are temporary. You can amend the sort, 
 Sometimes there will be changes you want to make that cannot be achieved with facets and filters. Such changes include:
 
 - Splitting data that is in a single column into multiple columns
-- Standardizing the format of data in a column withouth changing the values
+- Standardizing the format of data in a column without changing the values
 - Extracting a particular data type from a longer text string
 
 >OpenRefine provides **Transformations**, or methods of manipulating data in columns. 
 
-Transformations are written in **GREL** (General Refine Expression Langauge). GREL expressions are similar to Excel formulae, but emphasize manipulating text.
+Transformations are written in **GREL** (General Refine Expression Language). GREL expressions are similar to Excel formulae, but emphasize manipulating text.
 
 Full documentation for the GREL is available at [https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language](). This tutorial covers only a small subset of the commands available.
 
@@ -338,7 +338,7 @@ GREL functions are written by passing a value of some kind (text string, data, n
 2. Select "Akshantala Enterprises" and "Society of Pharmaceutical Technocrats"
 3. To select multiple values in the facet use the `include` link that appears to the right of the facet
 4. See that the Titles for these are all in uppercase
-5. Click the dropdown menu on the Title columm
+5. Click the dropdown menu on the Title column
 6. Choose `Edit cells -> Transform...`
 7. In the expression box type `value.toTitlecase()`
 8. In the Preview pane under `value.toTitlecase()` you can see what the effect of running this will be
@@ -358,7 +358,7 @@ However, some operations and transformations only work on ‘number’ or ‘dat
 ### Reformat a Date
 
 1. Remove any existing Facets or Filters.
-2. On the Date column, use the drop-down meny to select `Edit cells -> Transform`.
+2. On the Date column, use the drop-down menu to select `Edit cells -> Transform`.
 3. In the expression box, type `value.toDate("dd/MM/yyyy")` and press OK (**Note: the original creators of this dataset are from the UK - notice the regional date format**).
 4. Notice how the values are displayed in green and follow the ISO 8691 data convention - this indicates that values are now stored as date data types.
 5. On the Date column drop-down, select `Edit column -> Add column based on this column`. Using this function you can created a new column, while preserving the old column.
