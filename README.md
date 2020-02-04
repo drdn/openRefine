@@ -4,7 +4,7 @@
 **David Durden**, Data Services Librarian
 **Jodi Coalter**, Life Sciences Librarian
 
-February 06, 2020
+February 04, 2020
 
 ## Agenda and Topics
 
